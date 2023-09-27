@@ -1,5 +1,5 @@
 ;This program read one char and prints 'YES', if the char is 'A'
-%include "stud_io.inc"
+%include "../stud_io.inc"
 global	_start
 
 section	.text
