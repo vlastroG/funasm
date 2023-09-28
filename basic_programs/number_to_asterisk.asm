@@ -10,7 +10,7 @@ _start:	GETCHAR		; read char
 	cmp	al, 57	; com[are char and "9"
 	jg	finish	; if greater then finish
 	sub	al, 48	; convert char code to number
-	mov	cl, al	; set count for cycle
+	mov	ecx, eax; set count for cycle
 lp:	PUTCHAR "*"	; print "*"
 	loop	lp
 	PUTCHAR	10	; print new line char
