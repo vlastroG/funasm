@@ -16,6 +16,8 @@ cycle:	GETCHAR			; read char and write to eax
 	je	result
 	cmp	eax, 32		; check if it is space
 	je	save_lengths	;	if space, save current word length
+	cmp	eax, 9		; check is it is tab
+	je	save_lengths	; 	is tab, save current word length
 	inc	ebx
 	jmp	cycle
 save_lengths:
